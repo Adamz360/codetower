@@ -29,16 +29,61 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <BootstrapClient/>
       <body className={inter.className}>{children}
-      
-      <Script src="js/main.js"></Script>
-      <Script src="lib/easing/easing.js"></Script>
-      <Script src="lib/easing/easing.min.js"></Script>
-      <Script src="lib/owlcarousel/owlcarousel.js"></Script>
-      <Script src="lib/owlcarousel/owlcarousel.min.js"></Script>
-      <Script src="lib/waypoints/waypoints.min.js"></Script>
-      <Script src="lib/wow/wow.js"></Script>
-      <Script src="lib/wow/wow.min.js"></Script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <Script
+        src="js/main.js"
+        strategy="lazyOnload" // or "beforeInteractive" or "afterInteractive"
+      />
+      <Script
+        src="lib/easing/easing.js"
+        strategy="lazyOnload" // or "beforeInteractive" or "afterInteractive"
+      />
+      <Script
+        src="lib/easing/easing.min.js"
+        strategy="lazyOnload" // or "beforeInteractive" or "afterInteractive"
+      />
+      <Script
+        src="lib/owlcarousel/owlcarousel.js"
+        strategy="lazyOnload" // or "beforeInteractive" or "afterInteractive"
+      />
+      <Script
+        src="lib/owlcarousel/owlcarousel.min.js"
+        strategy="lazyOnload" // or "beforeInteractive" or "afterInteractive"
+      />
+      <Script
+        src="lib/waypoints/waypoints.min.js"
+        strategy="lazyOnload" // or "beforeInteractive" or "afterInteractive"
+      />
+      <Script
+        src="lib/wow/wow.js"
+        strategy="lazyOnload" // or "beforeInteractive" or "afterInteractive"
+      />
+      <Script
+        src="lib/wow/wow.min.js"
+        strategy="lazyOnload" // or "beforeInteractive" or "afterInteractive"
+      />
+      <Script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        strategy="lazyOnload" // or "beforeInteractive" or "afterInteractive"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" 
+        crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      />
+
+
+
+
+
+
+
+      {/* <Script src="js/main.js"></Script> */}
+      {/* <Script src="lib/easing/easing.js"></Script> */}
+      {/* <Script src="lib/easing/easing.min.js"></Script> */}
+      {/* <Script src="lib/owlcarousel/owlcarousel.js"></Script> */}
+      {/* <Script src="lib/owlcarousel/owlcarousel.min.js"></Script> */}
+      {/* <Script src="lib/waypoints/waypoints.min.js"></Script> */}
+      {/* <Script src="lib/wow/wow.js"></Script> */}
+      {/* <Script src="lib/wow/wow.min.js"></Script> */}
+      {/* <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> */}
       
       </body>
     </html>
