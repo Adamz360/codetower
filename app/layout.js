@@ -1,5 +1,21 @@
+import 'bootstrap/dist/css/bootstrap.css';
 import { Inter } from "next/font/google";
-import "./globals.css";
+// import "./globals.scss";
+import Script from 'next/script'
+import "@/assests/css/bootstrap.min.css"
+import "@/assests/css/style.css"
+import "@/assests/lib/animate/animate.css"
+import "@/assests/lib/animate/animate.min.css"
+import "@/assests/lib/owlcarousel/assets/owl.carousel.css"
+import "@/assests/lib/owlcarousel/assets/owl.carousel.min.css"
+import "@/assests/lib/owlcarousel/assets/owl.theme.default.css"
+import "@/assests/lib/owlcarousel/assets/owl.theme.default.min.css"
+import "@/assests/lib/owlcarousel/assets/owl.theme.green.css"
+import "@/assests/lib/owlcarousel/assets/owl.theme.green.min.css"
+
+
+
+import BootstrapClient from '@/components/BootstrapClient.js';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +27,20 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <BootstrapClient/>
+      <body className={inter.className}>{children}
+      
+      <Script src="js/main.js"></Script>
+      <Script src="lib/easing/easing.js"></Script>
+      <Script src="lib/easing/easing.min.js"></Script>
+      <Script src="lib/owlcarousel/owlcarousel.js"></Script>
+      <Script src="lib/owlcarousel/owlcarousel.min.js"></Script>
+      <Script src="lib/waypoints/waypoints.min.js"></Script>
+      <Script src="lib/wow/wow.js"></Script>
+      <Script src="lib/wow/wow.min.js"></Script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      
+      </body>
     </html>
   );
 }
